@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- RF created 13-Oct-2018 to test form data display-->
+
+<html lang="en">
+
+<head>
+	<title>Form Data Display</title>
+	
+	<script type="text/javascript">
+		function displayData() {
+			dispWin = window.open('','NewWin', 'toolbar=no,status=no,width=400,height=300') 
+			message = "<ul><li><strong>NAME: </strong>" + document.form1.name.value; 
+			message += "<li><strong>ADDRESS: </strong>" + document.form1.address.value; 
+			message += "<li><strong>PHONE: </strong>" + document.form1.phone.value + "</ul>"; 
+			dispWin.document.write(message); 
+		} 
+	</script>
+</head>
+
+<body bgcolor="PAPAYAWHIP">
+
+	<h1>Form Data Display Example</h1>
+	
+	<p>Enter the following information. When you press the Display button, 
+	the data you entered will be displayed in a pop-up.</p> 
+	
+	<form name="form1" method="get" action=""> 
+		<p>NAME: <input type="text" name="name" size="50" /></p> 
+		<p>ADDRESS: <input type="text" name="address" size="50" /></p> 
+		<p>PHONE: <input type="text" name="phone" size="50" /></p> 
+		<p><input type="button" value="Display" onclick="displayData();" /></p> 
+	</form>
+	
+	<br/><br/><br/><br/><br/><br/>
+	<p style="text-align:center; font-size:75%"><i><small>File: rf-form-data-display.html, created 13-Oct-2018<br/>
+	Document last modified on: <script>document.write(document.lastModified);</script></small></i></p>
+
+</body>
+
+</html>

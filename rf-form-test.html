@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- RF created 30-Sep-2018 to test form -->
+
+<html lang="en">
+
+<head>
+	<title>Form Test 1</title>
+</head>
+
+<body bgcolor="TURQUOISE">
+	
+	<h1>Form Test Page 1</h1>
+	 
+	<hr>
+	
+	<h3>Order Entry Page</h3>
+	
+	<form name="formtest1" method="post" action="myformprocessingscript.php" >
+	 
+	<p><strong>Your Name & Address:</strong> <br/>
+			First Name: <input size="15" type="text" name="fname" value="First Name"/> 
+			Last Name: 	<input size="15" type="text" name="lname" value="Last Name"/> <br/>
+			Address: 	<input size="50" type="text" name="address" value="Street, City, State, Zip"/> <br/> 
+   </p>
+	 
+	<p><strong>Items and Quantities</strong> <br/> 
+			Item1 		<input size="15" type="text" name="item1" value=" "/> 
+			Quantity: 	<input size="5" type="text" name="qty1" value=" "/> <br/>
+			Item2 		<input size="15" type="text" name="item2" value=" "/> 
+			Quantity: 	<input size="5" type="text" name="qty2" value=" "/> <br/>
+			Item3 		<input size="15" type="text" name="item3" value=" "/> 
+			Quantity: 	<input size="5" type="text" name="qty3" value=" "/> <br/>
+			Item4 		<input size="15" type="text" name="item4" value=" "/> 
+			Quantity: 	<input size="5" type="text" name="qty4" value=" "/> <br/>
+			Item5 		<input size="15" type="text" name="item5" value=" "/> 
+			Quantity: 	<input size="5" type="text" name="qty5" value=" "/> <br/>
+   </p>
+	<input type="button" value="Submit" onclick="window.alert('Order Submitted!')" />
+	 
+	<br/><br/><br/>
+	<hr>
+	
+	<h3>Alerts, Confirmations, and Prompts</h3>
+	
+	<p>Use the buttons below to test different types of dialogs in JavaScript.</p>
+	
+		<div> 
+			<input type="button" value="Check Cart" onclick="window.alert('Cart Checked!')" /> 
+			<input type="button" value="Confirm Order" onclick="window.confirm('Would you like to confirm your order?');" /> 
+			<input type="button" value="Email Copy" onclick="window.prompt('Enter email address:', 'enter_email@gmail.com');" /> 
+		</div>
+	
+	</form>
+	
+	<br/><br/>
+	<a href="rf-form-test2.html">Email message to Customer Service</a>
+	
+	<br/><br/><br/><br/><br/><br/>
+	<p style="text-align:center; font-size:75%"><i><small>File: rf-form-test.html, created 30-Sep-2018<br/>
+	Document last modified on: <script>document.write(document.lastModified);</script></small></i></p>
+
+</body>
+
+</html>
